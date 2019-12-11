@@ -12,11 +12,11 @@ public abstract class Unit implements IUnit{
 	private int goldCost;
 	private int foodCost;
 	private int buildingTime;
-	protected static List<IUnit> requirements;
+	protected List<String> requirements;
 	
 	Unit(int uID, String nom,int goldcost,int foodcost,int buildtime){
 		this.unitID=cpt++;
-		this.name=nom+uID;
+		this.name=nom;
 		this.goldCost=goldcost;
 		this.foodCost=foodcost;
 		this.buildingTime=buildtime;
@@ -38,7 +38,7 @@ public abstract class Unit implements IUnit{
 		return this.foodCost;
 	}
 	
-	public List<IUnit> getRequirements() {
+	public List<String> getRequirements() {
 		return requirements;
 	}
 	

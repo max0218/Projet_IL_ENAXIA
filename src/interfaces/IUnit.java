@@ -7,6 +7,6 @@ public interface IUnit {
 	public int getGoldCost();
 	public String getUnitName();
 	public int getFoodCost();
-	public List<IUnit> getRequirements();
+	public List<String> getRequirements();
 	public int getBuildingTime();
 }

@@ -13,11 +13,15 @@ public class Action {
 		time=t;
 	}
 	
-	IUnit getUnit() {
+	public IUnit getUnit() {
 		return this.unit;
 	}
 	
-	int getTime() {
+	public int getTime() {
 		return this.time;
+	}
+	
+	public String toString() {
+		return "The unit "+unit.getUnitName()+" is built at "+time;
 	}
 }

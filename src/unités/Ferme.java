@@ -5,6 +5,7 @@ public class Ferme extends Batiment {
 	private static int cpt=0;
 	public Ferme() {
 		super(cpt++, "Ferme", 100, 60);
+		requirements.add("Ouvrier");
 		// TODO Auto-generated constructor stub
 	}
 

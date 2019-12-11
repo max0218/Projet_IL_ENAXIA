@@ -25,6 +25,14 @@ public class BuildOrder implements IBuildOrder {
 		// TODO Auto-generated method stub
 		return bo;
 	}
+	
+	public String toString() {
+		StringBuilder str = new StringBuilder();
+		for(Action a : bo) {
+			str.append(a.toString()+"\n");
+		}
+		return str.toString();
+	}
 
 
 }

@@ -7,7 +7,8 @@ public class Hall extends Batiment {
 	public Hall() {
 		super(cpt++, "Hall", 200, 120);
 		// TODO Auto-generated constructor stub
-		requirements.add(new Ouvrier());
+		requirements.add("Ouvrier");
+		requirements.add("Caserne");
 	}
 
 }

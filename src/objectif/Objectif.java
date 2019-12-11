@@ -9,7 +9,7 @@ public class Objectif implements IObjectif {
 	private int goldToReach;
 	private List<IUnit> units;
 	
-	Objectif(){
+	public Objectif(){
 		units=new ArrayList<>();
 		goldToReach=0;
 	}
