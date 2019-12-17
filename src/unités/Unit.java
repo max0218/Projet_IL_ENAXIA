@@ -1,48 +1,30 @@
 package unités;
-import java.util.ArrayList;
-import java.util.List;
 
 import interfaces.*;
 
-public abstract class Unit implements IUnit{
+public class Unit  implements IUnit {
+
+
+	private String nom;
+	private int quant;
+	public static final UnitFactory Factory=new UnitFactory();
 	
-	private static int cpt;
-	private int unitID;
-	private String name;
-	private int goldCost;
-	private int foodCost;
-	private int buildingTime;
-	protected List<String> requirements;
+	Unit(String nom, int quant) {
 	
-	Unit(int uID, String nom,int goldcost,int foodcost,int buildtime){
-		this.unitID=cpt++;
-		this.name=nom;
-		this.goldCost=goldcost;
-		this.foodCost=foodcost;
-		this.buildingTime=buildtime;
-		requirements=new ArrayList<>();
+		this.nom=nom;
+		this.quant=quant;
 	}
-	
+
+
+	@Override
 	public String getUnitName() {
-		return this.name;
+		// TODO Auto-generated method stub
+		return nom;
 	}
-	
-	public int getUnitID() {
-		return this.unitID;
-	}
-	public int getGoldCost() {
-		return goldCost;
-	}
-	
-	public int getFoodCost() {
-		return this.foodCost;
-	}
-	
-	public List<String> getRequirements() {
-		return requirements;
-	}
-	
-	public int getBuildingTime() {
-		return buildingTime;
+
+	@Override
+	public int getQuantity() {
+		// TODO Auto-generated method stub
+		return quant;
 	}
 }

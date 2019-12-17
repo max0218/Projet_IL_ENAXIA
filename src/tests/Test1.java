@@ -29,15 +29,16 @@ public class Test1 {
 		System.out.println(bo.toString());
 		System.out.println("GG");
 	}
-	*/
+	
+*/
+	
 	@Test
 	public void test2() {
 		//bouchon BOBuilder? sans objectif
 		IObjectif obj=new Objectif();
-		obj.addUnit(new Caserne());
-		IOptimizer bob=new NaiveBuilder();
-		IBuildOrder bo=bob.getBO(obj);
-		
+		obj.addUnit(Unit.Factory.createHall(1));
+		IOptimizer naive=new NaiveBuilder();
+		IBuildOrder bo=naive.getBO(obj);
 		System.out.println(bo.toString());
 		System.out.println("GG");
 	}
