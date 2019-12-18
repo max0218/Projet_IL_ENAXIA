@@ -3,8 +3,8 @@ package interfaces;
 import java.util.ArrayList;
 import java.util.List;
 
-import unités.Unit;
-import unités.MobilisedUnits;
+import techTree.MobilisedUnits;
+import techTree.Unit;
 
 public interface ITechTree {
 

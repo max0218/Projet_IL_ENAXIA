@@ -1,4 +1,4 @@
-package unités;
+package techTree;
 
 public class MobilisedUnits {
 	private Unit unite;

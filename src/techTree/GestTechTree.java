@@ -1,4 +1,4 @@
-package unités;
+package techTree;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,18 +19,25 @@ public class GestTechTree implements ITechTree {
 		switch (id.getUnitName()) {
 		case "Centre":
 			time=200;
+			break;
 		case "Ferme":
 			time=60;
+			break;
 		case "Caserne":
 			time=100;
+			break;
 		case "Hall": 
 			time=120;
+			break;
 		case "Ouvrier":
 			time=30;
+			break;
 		case "Soldat":
 			time=50;
+			break;
 		case "Boss": 
 			time=100;
+			break;
 		default:
 			time=0;
 		}
@@ -48,18 +55,25 @@ public class GestTechTree implements ITechTree {
 		switch (id.getUnitName()) {
 		case "Centre":
 			coste=300;
+			break;
 		case "Ferme":
 			coste=100;
+			break;
 		case "Caserne":
 			coste=150;
+			break;
 		case "Hall": 
 			coste=200;
+			break;
 		case "Ouvrier":
 			coste=50;
+			break;
 		case "Soldat":
 			coste=100;
+			break;
 		case "Boss": 
 			coste=200;
+			break;
 		default:
 			coste=0;
 		}
@@ -109,18 +123,25 @@ public class GestTechTree implements ITechTree {
 		switch (id.getUnitName()) {
 		case "Centre":
 			mob=new MobilisedUnits(new Unit("Ouvrier",1),200);
+			break;
 		case "Ferme":
 			mob=new MobilisedUnits(new Unit("Ouvrier",1),100);
+			break;
 		case "Caserne":
 			mob=new MobilisedUnits(new Unit("Ouvrier",1),100);
+			break;
 		case "Hall": 
 			mob=new MobilisedUnits(new Unit("Ouvrier",1),120);
+			break;
 		case "Ouvrier":
 			mob=new MobilisedUnits(new Unit("Centre",1),30);
+			break;
 		case "Soldat":
 			mob=new MobilisedUnits(new Unit("Caserne",1),50);
+			break;
 		case "Boss": 
 			mob=new MobilisedUnits(new Unit("Caserne",1),100);
+			break;
 		default:
 			mob=null;
 		}

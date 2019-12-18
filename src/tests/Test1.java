@@ -9,7 +9,7 @@ import buildOrder.BOFactory;
 import buildOrderBuilder.*;
 import interfaces.*;
 import objectif.Objectif;
-import unités.*;
+import techTree.*;
 
 
 // my yellow SUBmOOrine 
@@ -37,6 +37,7 @@ public class Test1 {
 		//bouchon BOBuilder? sans objectif
 		IObjectif obj=new Objectif();
 		obj.addUnit(Unit.Factory.createHall(1));
+		obj.addUnit(Unit.Factory.createBoss(1));
 		IOptimizer naive=new NaiveBuilder();
 		IBuildOrder bo=naive.getBO(obj);
 		System.out.println(bo.toString());
