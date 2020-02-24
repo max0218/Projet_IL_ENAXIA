@@ -43,6 +43,5 @@ public class Test1 {
 		System.out.println(bo.toString());
 		System.out.println("GG");
 	}
-	
 
 }
